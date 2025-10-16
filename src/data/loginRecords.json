@@ -1,0 +1,102 @@
+[
+  {
+    "id": "login-001",
+    "createdAt": "2024-10-14T08:15:00.000Z",
+    "updatedAt": "2024-10-14T08:15:00.000Z",
+    "userId": "user-001",
+    "activityType": "login",
+    "timestamp": "2024-10-14T08:15:00.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-002",
+    "createdAt": "2024-10-14T09:30:00.000Z",
+    "updatedAt": "2024-10-14T09:30:00.000Z",
+    "userId": "user-002",
+    "activityType": "login",
+    "timestamp": "2024-10-14T09:30:00.000Z",
+    "ipAddress": "192.168.1.101",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-003",
+    "createdAt": "2024-10-14T10:45:00.000Z",
+    "updatedAt": "2024-10-14T10:45:00.000Z",
+    "userId": "user-003",
+    "activityType": "login",
+    "timestamp": "2024-10-14T10:45:00.000Z",
+    "ipAddress": "192.168.1.102",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-004",
+    "createdAt": "2024-10-14T12:00:00.000Z",
+    "updatedAt": "2024-10-14T12:00:00.000Z",
+    "userId": "user-001",
+    "activityType": "logout",
+    "timestamp": "2024-10-14T12:00:00.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-005",
+    "createdAt": "2024-10-14T13:20:00.000Z",
+    "updatedAt": "2024-10-14T13:20:00.000Z",
+    "userId": "user-004",
+    "activityType": "login",
+    "timestamp": "2024-10-14T13:20:00.000Z",
+    "ipAddress": "192.168.1.103",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15"
+  },
+  {
+    "id": "login-006",
+    "createdAt": "2024-10-14T14:35:00.000Z",
+    "updatedAt": "2024-10-14T14:35:00.000Z",
+    "userId": "user-005",
+    "activityType": "login",
+    "timestamp": "2024-10-14T14:35:00.000Z",
+    "ipAddress": "192.168.1.104",
+    "userAgent": "Mozilla/5.0 (Android 14; Mobile; rv:109.0) Gecko/111.0 Firefox/111.0"
+  },
+  {
+    "id": "login-007",
+    "createdAt": "2024-10-14T15:50:00.000Z",
+    "updatedAt": "2024-10-14T15:50:00.000Z",
+    "userId": "user-002",
+    "activityType": "logout",
+    "timestamp": "2024-10-14T15:50:00.000Z",
+    "ipAddress": "192.168.1.101",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-008",
+    "createdAt": "2024-10-14T16:15:00.000Z",
+    "updatedAt": "2024-10-14T16:15:00.000Z",
+    "userId": "user-003",
+    "activityType": "logout",
+    "timestamp": "2024-10-14T16:15:00.000Z",
+    "ipAddress": "192.168.1.102",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-009",
+    "createdAt": "2024-10-14T17:30:00.000Z",
+    "updatedAt": "2024-10-14T17:30:00.000Z",
+    "userId": "user-001",
+    "activityType": "login",
+    "timestamp": "2024-10-14T17:30:00.000Z",
+    "ipAddress": "192.168.1.100",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+  {
+    "id": "login-010",
+    "createdAt": "2024-10-14T18:45:00.000Z",
+    "updatedAt": "2024-10-14T18:45:00.000Z",
+    "userId": "user-004",
+    "activityType": "logout",
+    "timestamp": "2024-10-14T18:45:00.000Z",
+    "ipAddress": "192.168.1.103",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15"
+  }
+]
