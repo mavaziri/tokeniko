@@ -14,6 +14,7 @@ import {
 } from 'react-bootstrap';
 import { loginSchema, type LoginFormData } from '@/schemas/validation';
 import { LoginRecordClass } from '@/utils/classes';
+import { ApiService } from '@/services/apiService';
 import { ActivityType, ApiResponse, AuthUser } from '@/types';
 
 interface LoginFormProps {
@@ -69,44 +70,29 @@ export const LoginForm: React.FC<LoginFormProps> = ({
     credentials: LoginFormData
   ): Promise<ApiResponse<AuthUser>> => {
     try {
-      const usersData = await import('@/data/users.json');
-      console.log('usersData', usersData);
-
-      const users = usersData.default;
-
-      const user = users.find(
-        (user) =>
-          user.email === credentials.username ||
-          user.mobileNumber === credentials.username
+      const response = await ApiService.authenticateUser(
+        credentials.username,
+        credentials.username
       );
 
-      if (!user) {
+      if (response.success && response.data) {
+        const authUser: AuthUser = {
+          id: response.data.id,
+          email: response.data.email,
+          fullName: response.data.fullName,
+          mobileNumber: response.data.mobileNumber,
+        };
+
         return {
-          success: false,
-          error: 'Invalid username or password',
+          success: true,
+          data: authUser,
+          message: 'Login successful',
         };
       }
 
-      if (!credentials.password) {
-        return {
-          success: false,
-          error: 'Password is required',
-        };
-      }
-
-      const authUser: AuthUser = {
-        id: user.id,
-        email: user.email,
-        fullName: user.fullName,
-        mobileNumber: user.mobileNumber,
-      };
-
-      return {
-        success: true,
-        data: authUser,
-        message: 'Login successful',
-      };
+      return response;
     } catch (error) {
+      console.error('Authentication error details:', error);
       return {
         success: false,
         error: 'Authentication service unavailable',
